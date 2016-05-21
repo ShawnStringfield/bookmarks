@@ -1,0 +1,62 @@
+.dropdown-container {
+    position: relative;
+    width: auto;
+    min-width: 250px;
+
+    .dropdown-list {
+        @include list-reset;
+        width: 100%;
+        background-color: #EEE;
+        position: absolute;
+        top: 50px;
+        width: auto;
+        min-width: 250px;
+        box-shadow: 1px 1px 8px rgba(black, .2);
+
+        li {
+            border-bottom: 1px solid rgba(black, .1);
+            padding: 15px 25px 15px 20px;
+            cursor: pointer;
+            transition: all .5s;
+            text-transform: uppercase;
+            color: darken(#0359A6, 10);
+
+            &:last-child { border: none; }
+            &:hover { background-color: #DDD; }
+        }
+
+        input {
+            border: none;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.btn.btn-text {
+    min-width: 200px;
+    text-transform: uppercase;
+}
+
+.btn.btn-dropdown {
+    padding: 25px 15px;
+    cursor: pointer;
+    transition: background-color .5s;
+    position: relative;
+    background-color: #025AA5;
+
+    &:hover { background-color: darken(#025AA5, 8); }
+
+    &:before {
+        content: '';
+        padding: 10px;
+    }
+
+    &.up:before {
+        background: url('../../assets/img/mi-arrow-up.svg') center no-repeat;
+    }
+
+    &.down:before {
+        background: url('../../assets/img/mi-arrow-down.svg') center no-repeat;
+    }
+}

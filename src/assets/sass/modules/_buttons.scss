@@ -1,0 +1,40 @@
+.btn {
+    margin: 0;
+    border: none;
+    background-color: #0275D8;
+    color: white;
+    font-size: 14px;
+    line-height: 0;
+    padding: 25px;
+    outline: none;
+    border-radius: 0;
+}
+
+.btn-group {
+    .btn { float: left; }
+}
+
+.btn-icon {
+    padding: 0;
+    border: none;
+    background: none;
+    line-height: 0;
+
+    i.material-icons { color: #0275D8; }
+}
+
+.btn-add {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    i.material-icons { font-size: 32px; }
+}
+
+.toolbar {
+    overflow: hidden;
+    .btn-icon {
+        padding-right: 10px;
+        float: left;
+    }
+}
